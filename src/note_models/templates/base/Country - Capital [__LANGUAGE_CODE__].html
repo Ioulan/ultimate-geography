@@ -1,13 +1,14 @@
 {{#Capital}}
-  <div class="value value--top">{{Country}}</div>
-  {{#Country info}}<div class="info">{{Country info}}</div>{{/Country info}}
+<div class="value value--top">{{Country}}</div>
+{{#Country info}}<div class="info">{{Country info}}</div>{{/Country info}}
 
-  <hr>
+<hr>
 
-  <div class="type">__CAPITAL_TRANSLATION__</div>
-  <div class="value">?</div>
+<div class="type">__CAPITAL_TRANSLATION__</div>
+<div class="value">?</div>
 {{/Capital}}
 
+{{tts __TTS_LANG_CODE__:Country}}
 --
 
 <div class="value value--top">{{Country}}</div>
@@ -18,3 +19,5 @@
 <div class="type">__CAPITAL_TRANSLATION__</div>
 <div class="value">{{Capital}}</div>
 {{#Capital info}}<div class="info">{{Capital info}}</div>{{/Capital info}}
+
+{{tts __TTS_LANG_CODE__:Capital}}

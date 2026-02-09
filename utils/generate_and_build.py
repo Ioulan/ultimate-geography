@@ -63,6 +63,7 @@ def generate_templates():
         output_dir_folder = output_dir / language
         output_dir_folder.mkdir(parents=True, exist_ok=True)
         replacements = [(name, row[name]) for name in fieldnames]
+        replacements.append(("__TTS_LANG_CODE__", language.lower()))
 
         for base_path in base_files:
             content = base_path.read_text(encoding="utf-8")

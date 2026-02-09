@@ -1,13 +1,14 @@
 {{#Capital}}
-  <div class="value value--top">?</div>
+<div class="value value--top">?</div>
 
-  <hr>
+<hr>
 
-  <div class="type">__CAPITAL_TRANSLATION__</div>
-  <div class="value">{{Capital}}</div>
-  {{#Capital hint}}<div class="info">Hint: {{Capital hint}}</div>{{/Capital hint}}
+<div class="type">__CAPITAL_TRANSLATION__</div>
+<div class="value">{{Capital}}</div>
+{{#Capital hint}}<div class="info">Hint: {{Capital hint}}</div>{{/Capital hint}}
 {{/Capital}}
 
+{{tts __TTS_LANG_CODE__:Capital}}
 --
 
 <div id=answer class="value value--top">{{Country}}</div>
@@ -19,3 +20,5 @@
 <div class="value">{{Capital}}</div>
 {{#Capital hint}}<div class="info">__HINT_TRANSLATION__{{Capital hint}}</div>{{/Capital hint}}
 {{#Capital info}}<div class="info">{{Capital info}}</div>{{/Capital info}}
+
+{{tts __TTS_LANG_CODE__:Country}}
